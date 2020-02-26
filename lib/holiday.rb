@@ -73,9 +73,9 @@ def all_supplies_in_holidays(holiday_hash)
     elsif season == :fall
       puts "Fall:"
     elsif season == :summer
-      puts "Summer"
+      puts "Summer:"
     elsif season == :spring
-      puts "Spring"
+      puts "Spring:"
     end
     holidays.each do |holiday, supplies|
       holiday_string = ""
