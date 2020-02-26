@@ -112,5 +112,6 @@ def all_holidays_with_bbq(holiday_hash)
     if season[holiday].includes?("BBQ")
       true
     end
+    false
   end
 end
