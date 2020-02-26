@@ -90,6 +90,13 @@ def all_supplies_in_holidays(holiday_hash)
       elsif holiday == :memorial_day
         holiday_string = "Memorial Day:"
       end
+      i = 0
+      while i < supplies.length
+        if i != supplies.length - 1
+          holiday_string += "#{supplies[i]},"
+        end
+        i += 1
+      end
     end
   end
 end
