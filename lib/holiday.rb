@@ -94,9 +94,12 @@ def all_supplies_in_holidays(holiday_hash)
       while i < supplies.length
         if i != supplies.length - 1
           holiday_string += "#{supplies[i]},"
+        else
+          holiday_string += "#{supplies[i]}"
         end
         i += 1
       end
+      puts holiday_string
     end
   end
 end
