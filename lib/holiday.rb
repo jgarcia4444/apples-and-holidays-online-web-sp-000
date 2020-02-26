@@ -27,7 +27,7 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   # Christmas AND the New Year's arrays
   winter = holiday_hash[:winter]
   winter.each do |holiday, value|
-    holiday << supply
+    value << supply
   end
 end
 
