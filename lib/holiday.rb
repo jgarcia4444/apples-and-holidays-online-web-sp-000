@@ -77,6 +77,20 @@ def all_supplies_in_holidays(holiday_hash)
     elsif season == :spring
       puts "Spring"
     end
+    holidays.each do |holiday, supplies|
+      holiday_string = ""
+      if holiday == :christmas
+        holiday_string = "Christmas:"
+      elsif holiday == :new_years
+        holiday_string = "New Years"
+      elsif holiday == :fourth_of_july
+        holiday_string = "Fourth Of July"
+      elsif holiday == :thanksgiving
+        holiday_string = "Thanksgiving"
+      elsif holiday == :memorial_day
+        holiday_string = "Memorial Day"
+      end
+    end
   end
 end
 
