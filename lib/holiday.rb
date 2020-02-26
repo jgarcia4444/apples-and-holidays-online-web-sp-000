@@ -80,15 +80,15 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |holiday, supplies|
       holiday_string = ""
       if holiday == :christmas
-        holiday_string = "Christmas:"
+        holiday_string = "  Christmas:"
       elsif holiday == :new_years
-        holiday_string = "New Years:"
+        holiday_string = "  New Years:"
       elsif holiday == :fourth_of_july
-        holiday_string = "Fourth Of July:"
+        holiday_string = "  Fourth Of July:"
       elsif holiday == :thanksgiving
-        holiday_string = "Thanksgiving:"
+        holiday_string = "  Thanksgiving:"
       elsif holiday == :memorial_day
-        holiday_string = "Memorial Day:"
+        holiday_string = "  Memorial Day:"
       end
       i = 0
       while i < supplies.length
